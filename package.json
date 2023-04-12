@@ -1,0 +1,54 @@
+{
+  "name": "jest-zod",
+  "version": "1.0.0",
+  "description": "Zod schema matcher for jest",
+  "module": "dist/index.mjs",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm-run-all -l clean -p build:*",
+    "build:bundles": "node build.js",
+    "build:types": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Briggybros/jest-zod.git"
+  },
+  "keywords": [
+    "jest",
+    "zod",
+    "matcher",
+    "schema"
+  ],
+  "author": "Briggybros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Briggybros/jest-zod/issues"
+  },
+  "homepage": "https://github.com/Briggybros/jest-zod#readme",
+  "peerDependencies": {
+    "zod": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "esbuild": "^0.17.16",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-xo": "^0.43.1",
+    "eslint-config-xo-typescript": "^0.57.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.0",
+
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
